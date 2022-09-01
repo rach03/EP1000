@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width-device-width, initial-scale=1.0">
+            <title>MY FINAL PROJECT</title>
+            <link rel="stylesheet" href="resources/css/styles.css"> 
+            
+    </head>
+
+    <body>
+        <div class="top-bar">
+            <div class="header">
+                <h1><a href="home.html">Digital Fabrication [EP1000]</a></h1>
+            </div>
+            <div class="navigation">
+                <ul class="navbar">
+                    <li><a href="profile.html">About Me</a></li>
+                    <li><a href="mycerts.html">My Certifications</a></li>
+                    <li class="dropdown">
+                        <a href="blog.html" class="dropbtn">Documentation</a>
+                        <div class="dropdown-content">
+                            <a href="#cad">CAD,2D Softwares</a>
+                            <a href="#3d">3D Printing</a>
+                            <a href="#lascu">Laser Cutting</a>
+                            <a href="#embsy">Embedded Systems</a>
+                            <!--bookmark to page-->
+                        </div>
+                    </li>
+                    <li><a href="finalproject.html">My Final Project</a></li>           
+                </ul>
+            </div>
+        </div>
+            
+        <div class="main">
+            <h2>LED Astronomical Clock</h2>
+            <h3>About the Project</h3>
+            <h4>What does it do?</h4>
+            <p>
+                This is a mood lamp with an icosahedron design. It's designed to provide a variety of mood colours with a press of a button. 
+            </p>
+            <h4>What are it's features?</h4>
+            <p>
+                <ol type="a">
+                    <li>
+                        Provides different mood lightings.
+                    </li>
+                    <li>
+                        COntrol lighting and its features using a push button.
+                    </li>
+                    <li>
+                        3-dimensional design that provides pathway for light in all directions.
+                    </li>
+                </ol>
+            </p>
+            <h4>What will you make?</h4>
+            <p>
+                <table style="border: 1px rgb(32, 32, 32); border-collapse: collapse; width: 90%;"><!--how come doesn't show colour?-->
+                    <tr>
+                        <th>CAD Design, Graphics</th>
+                        <td>Product design</td>
+                    </tr>
+                    <tr>
+                        <th>Laser Cutting</th>
+                        <td>Frame structures, Diffusing panels </td>
+                    </tr>
+                    <tr>
+                        <th>3D Printing</th>
+                        <td>Joints, casing</td>
+                    </tr>
+                    <tr>
+                        <th>Processing</th>
+                        <td>Arduino UNO</td>
+                    </tr>
+                    <tr>
+                        <th>Input Devices</th>
+                        <td>Push-button</td>
+                    </tr>
+                    <tr>
+                       <th>Output Devices</th>
+                       <td>Neopixel LEDs</td>
+                    </tr>
+                </table>
+            </p>
+        
+            <h4>Bill-of-Materials</h4>
+            <table style="border: 1px rgb(32, 32, 32); border-collapse: collapse; width: 90%;"><!--how come doesn't show colour?-->
+                <tr>
+                        <th>Sn.</th>
+                        <th>Qty</th>
+                        <th>Item Description</th>
+                        <th>Approx. Cost</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>1</td>
+                    <td>
+                        <div class="dropoption">
+                            <a href="https://shopee.sg/Arduino--R3-ATmega328P-CH340G-USB-Driver-Board-with-USB-Cable-DIY-i.182366663.20320700464" class="hidden">Arduino Uno + USB Cable</a>
+                            <div class="hidden-content">
+                                <img src="resources/img/finalproject/BOM/arduino uno+usb cable.png" alt=arduino + usb width="150px">                                
+                            </div>
+                        </div>
+                    </td>
+                    <td>$11.41 (provided)</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>1</td>
+                    <td>                            
+                        <div class="dropoption">
+                            <a href="https://www.electromaker.io/shop/product/mini-pushbutton-switch?srsltid=AdGWZVQaMYHfjuYIP7hS2jO688TMNrr8Lh2CQWnQgtczwBzXS0NQq8kYGSU" class="hidden">Push Button</a>
+                            <div class="hidden-content">
+                                <img src="resources/img/finalproject/BOM/push button.png" alt=push button width="150px">
+                            </div>
+                        </div>
+                    </td>
+                    <td>$0.35 (provided)</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>1</td>
+                    <td>
+                        <div class="dropoption">
+                            <a href="https://shopee.sg/Xnbada-1-5M-WS2812B-Led-Strip-30-pixels-leds-m-Smart-5050-RGB-led-Strip-light-Black-White-PCB-WS2812-IC%3BIP30-IP65-IP67-DC5V-i.313937784.8706484142" class="hidden">Neopixel LED </a>
+                            <div class="hidden-content">
+                                <img src="resources/img/finalproject/BOM/neopixel led.png" alt=neopixel width="150px">
+                            </div>
+                        </div>
+                    </td>
+                    <td>$5.50/1metre (provided)</th>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>1</td>
+                    <td>5mm acrylic sheet (frosted/clear/white)</td>
+                    <td>- (provided)</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>1</td>
+                    <td>5mm plywood</td>
+                    <td>- (provided)</td>
+                </tr>
+            </table>
+
+                <!--used to bookmark the page-->
+                <!--<a href=""><img src=""alt="brainstorm & planning" style="width:; height:;"></a>
+                <a href=""><img src=""alt="fabrication-lasercutting" style="width:; height:;"></a>
+                <a href=""><img src=""alt="fabrication-3d printing" style="width:; height:;"></a>
+                <a href=""><img src=""alt="electrical connection" style="width:; height:;"></a>
+                <a href=""><img src=""alt="coding" style="width:; height:;"></a>
+                <a href=""><img src=""alt="assembly & interface" style="width:; height:;"></a>-->
+            
+            <h3 id="">Ideation</h3>
+            <p>
+                Before starting on the project, I had to do some research. During my research, I found many mood lamp designs, and a lot of them had a single acrylic laser cut design. 
+                I wanted to try something a bit different and was thinking of trying to create a more 3-dimensional looking design for display. 
+                As I looked further into it, I found more like it such as cylindrical and polyhedron. In the end, I decided to attempt creating a regular polyhedron, specifically the icosahedron, as there are not many icosahedron mood lamps <br>
+                
+            </p>
+            <h4>Research</h4>
+            <p>
+                <b>What is icosahedron?</b> <br>
+                It is an interesting mathematical shape with:
+                <ul style="list-style-type: square;">
+                    <li>20 faces of equilateral triangles</li>
+                    <li>30 edges</li>
+                    <li>12 vertices (sharp corners)</li>                
+                </ul>
+
+                From my research, I found that there was <a href="https://www.instructables.com/RGB-Icosahedron-Mood-Lamp/">one project</a> that was quite similar to mine in terms of design, however, it's different wheree the publisher used an RGB smart bulb together with the Amazon Alexa App. 
+            
+            </p>
+            <h4>Concept Sketch</h4>
+            <p> 
+                <img src=""> <br>
+                For my icosahedron project, I have a few components to take note of:
+                <ul>
+                    <li>Laser Cut
+                        <ul>
+                            <li>Sticks/Frame structure
+                                <dd>- 30 sticks</dd>
+                                <dd>- 5mmx5mm cross-section square tubing/dd>
+                                <dd>- 5mm plywood</dd>
+                                <dd>- all the tubing has to be equal in length</dd>
+                                <dd>- used to form the structure of the entire project (just like a skeleton)</dd>
+                            </li>
+                            <li>Diffuser panels
+                                <dd>- 20 equilateral triangles</dd>
+                                <dd>- 5mm acrylic</dd>
+                                <dd>- used to diffuse the lighting to create an effect</dd>
+                            </li>      
+                            <li>Base to hold electrical components
+                                <dd>- hexagon shape (to fit inside the lamp)</dd>
+                                <dd>- length of each side = 80mm</dd>
+                            </li>                              
+                         </ul>                           
+                    <li>3D Printing
+                        <ul>
+                            <li>Joints                                    
+                                <dd>- 12 pieces (vertices)</dd>
+                                <dd>- 5 attachment points for each piece</dd>
+                                <dd>- 5mmx5mm square hole, 35mm deep</dd>
+                                <dd>- used connect the sticks together</dd>
+                            </li>
+                            <li>Casing
+                                <dd>- used to store arduino board</dd>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+
+            <p> 
+                Here is an attached file to give you a better visualisation of how the shape of the model would look like after assembling. <br>
+                <iframe src="https://gmail908803.autodesk360.com/shares/public/SH35dfcQT936092f0e43295f6c4d842f67eb?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+            </p>
+        
+        <!--<h3>Planning</h3>
+        <iframe src="" height="" width="" title=""></iframe>
+        <pdf link for filled out form
+        <h4>Product Features & Components</h4>
+        <h4>Concept Sketch & Prototyping</h4>
+        <can use <area> and <picture> to zoom in on the sketch up + highlight whats to be fabricated
+        <h4>Bill of Materials (BOM)</h4>
+        <iframe src="" height="" width="" title=""></iframe>-->
+        
+
+        <h2>Implementation</h2>
+        <h3>Fabrication</h3>
+        <h4 id="">Laser cutting</h4>
+        <p>
+            <b>Acrylic</b> <br>
+            
+        </p>
+        <p>...</p>
+        <iframe src="" height="" width="" title=""></iframe>
+
+
+        <h4 id="">3D Printing</h4>
+        <p>
+            I think this might be one of the more challenging components of the project as I am not as familiar with the routine of making the joints. (especially to scale)
+        </p>
+        
+        <iframe src="" height="" width="" title=""></iframe>
+
+
+        <h3 id="">Electrical Connection</h3>
+        <p>...</p>
+        <iframe src="" height="" width="" title=""></iframe>
+
+
+        <h3 id="">Coding</h3>
+        <p>...</p>
+
+        <h3 id="">Assembly</h3>
+        <p>...</p>
+
+        <h2>Results</h2>
+        <img src="" alt="final product" width="" height=""/>
+        <p>...</p> <!--reflection:what was completed/what was successful/what needs more work?etc.-->
+    </div>
+    /body>
+    
+</html>
+   
