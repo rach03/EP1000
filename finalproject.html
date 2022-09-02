@@ -35,7 +35,7 @@
         </div>
             
         <div class="main">
-            <h2>LED Astronomical Clock</h2>
+            <h2>Icosahedron Mood Lamp</h2>
             <h3>About the Project</h3>
             <h4>What does it do?</h4>
             <p>
@@ -48,7 +48,7 @@
                         Provides different mood lightings.
                     </li>
                     <li>
-                        COntrol lighting and its features using a push button.
+                        Control lighting and its features using a push button.
                     </li>
                     <li>
                         3-dimensional design that provides pathway for light in all directions.
@@ -158,7 +158,7 @@
             <p>
                 Before starting on the project, I had to do some research. During my research, I found many mood lamp designs, and a lot of them had a single acrylic laser cut design. 
                 I wanted to try something a bit different and was thinking of trying to create a more 3-dimensional looking design for display. 
-                As I looked further into it, I found more like it such as cylindrical and polyhedron. In the end, I decided to attempt creating a regular polyhedron, specifically the icosahedron, as there are not many icosahedron mood lamps <br>
+                As I looked further into it, I found more like it such as cylindrical and polyhedron. In the end, I decided to attempt creating a regular polyhedron, specifically the icosahedron, as there are not many icosahedron mood lamps. <br>
                 
             </p>
             <h4>Research</h4>
@@ -172,41 +172,36 @@
                 </ul>
 
                 From my research, I found that there was <a href="https://www.instructables.com/RGB-Icosahedron-Mood-Lamp/">one project</a> that was quite similar to mine in terms of design, however, it's different wheree the publisher used an RGB smart bulb together with the Amazon Alexa App. 
-            
             </p>
             <h4>Concept Sketch</h4>
             <p> 
-                <img src=""> <br>
+                <img src="resources/img/finalproject/concept sketch.png" width="45%"> <br>
                 For my icosahedron project, I have a few components to take note of:
                 <ul>
                     <li>Laser Cut
                         <ul>
-                            <li>Sticks/Frame structure
+                            <li>Sticks/Frame structure (edges)
                                 <dd>- 30 sticks</dd>
-                                <dd>- 5mmx5mm cross-section square tubing/dd>
+                                <dd>- 5mmx5mm cross-section square tubing<dd>
                                 <dd>- 5mm plywood</dd>
-                                <dd>- all the tubing has to be equal in length</dd>
+                                <dd>- all the tubing has to be equal in length (</dd>
                                 <dd>- used to form the structure of the entire project (just like a skeleton)</dd>
                             </li>
-                            <li>Diffuser panels
+                            <li>Diffuser panels (faces)
                                 <dd>- 20 equilateral triangles</dd>
                                 <dd>- 5mm acrylic</dd>
                                 <dd>- used to diffuse the lighting to create an effect</dd>
-                            </li>      
-                            <li>Base to hold electrical components
-                                <dd>- hexagon shape (to fit inside the lamp)</dd>
-                                <dd>- length of each side = 80mm</dd>
-                            </li>                              
+                            </li>                 
                          </ul>                           
                     <li>3D Printing
                         <ul>
-                            <li>Joints                                    
-                                <dd>- 12 pieces (vertices)</dd>
+                            <li>Joints (vertices)                         
+                                <dd>- 12 pieces </dd>
                                 <dd>- 5 attachment points for each piece</dd>
-                                <dd>- 5mmx5mm square hole, 35mm deep</dd>
-                                <dd>- used connect the sticks together</dd>
+                                <dd>- 5mmx5mmx5mm square-shaped hole</dd>
+                                <dd>- used to connect the sticks together</dd>
                             </li>
-                            <li>Casing
+                            <li>Arduino casing
                                 <dd>- used to store arduino board</dd>
                             </li>
                         </ul>
@@ -219,51 +214,69 @@
                 <iframe src="https://gmail908803.autodesk360.com/shares/public/SH35dfcQT936092f0e43295f6c4d842f67eb?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
             </p>
         
-        <!--<h3>Planning</h3>
-        <iframe src="" height="" width="" title=""></iframe>
-        <pdf link for filled out form
-        <h4>Product Features & Components</h4>
-        <h4>Concept Sketch & Prototyping</h4>
-        <can use <area> and <picture> to zoom in on the sketch up + highlight whats to be fabricated
-        <h4>Bill of Materials (BOM)</h4>
-        <iframe src="" height="" width="" title=""></iframe>-->
-        
 
         <h2>Implementation</h2>
         <h3>Fabrication</h3>
-        <h4 id="">Laser cutting</h4>
+        <h4>Laser cutting</h4>
         <p>
             <b>Acrylic</b> <br>
-            
+            For the diffuser panels, I planned to use acrylic. The goal is to allow light to pass through the wall of the lamp so I decided to go for either a clear, frosted or white coloured acrylic. I've created regular equilateral triangles with a part of the corners cut of, this is to allow the panels to fit in with the attached joints and sticks.<br>
+            <img src="resources/img/finalproject/acrylic sketch.png" width=45%>
         </p>
-        <p>...</p>
-        <iframe src="" height="" width="" title=""></iframe>
-
-
-        <h4 id="">3D Printing</h4>
         <p>
-            I think this might be one of the more challenging components of the project as I am not as familiar with the routine of making the joints. (especially to scale)
+            <b>Wood</b> <br>
+            I'll be using plywood to cut out 5x5 sticks to use as the structure/skeleton of the mood lamp design. <br>
+            For this component, I simply used the 'Box' and put to my desired length. Afterwards I use 'Retangular pattern' to make 29 other similar copies. <br>
+            <img src="resources/img/finalproject/Wood sketch.png" width=45%>
         </p>
-        
-        <iframe src="" height="" width="" title=""></iframe>
+   
+        <h4>3D Printing</h4>
+        <p>
+            I'll be 3D printing a casing to hold the arduino as well as 12 joints to connect the laser cut sticks. It was quite doable to create the casing, especially when I was able to refer to dimensions online and I also have an arduino board on hand to take in the measurements. As for the joints, I think this might be one of the more challenging components of the project as I am not as familiar with the routine of making the joints. (especially to scale) It took me quite a while to draw up the joint design but I'm satisified with the outcome! <br>
+            <iframe src="https://gmail908803.autodesk360.com/shares/public/SH35dfcQT936092f0e43abe812a0462a404a?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+        </p>
+        <p>
+            For the casing, I created two seperated components, the casing and the cover(lid). <br> 
+            How I drew my casing?<br>
+            So basically, I started out with a simple rectangle sketch (following the arduino board dimensions) and 'offsketch' to create the outer wall. Then I extruded the sketch and design it however I like. <br>
+            For me, I was afraid the distance and scaling would still be off as I am unable to put them together to see the actual sizing, whether it fitting. So, I made the holes bigger incase. (make room for any errors) <br>
+            <iframe src="https://gmail908803.autodesk360.com/shares/public/SH35dfcQT936092f0e433c3f22920d68de55?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+        </p>
+        <p>
+            Moving on to the joints, it take my a couple of trials to design the joint of my preferred shape, angle, sizing etc.<br>
+            I first created a polygon (hexagon), with its centre point at the point of origin, to create a rough scale of how/where I would want to position my attachments in the later stage. <br>
+            Next, extrude the hexagon sketch and created a new sketch on the top plane. For this sketch, I select 'Offsketch' after tracing the first hexagon to create a smaller hexagon inline with the centre point of the previous hexagon. For this step, I wanted to create a 'Loft' so that I'll have a diagonal plane to sketch of the attachment cross-section. <br>
+            This brings me to the next step where I remove the extruded body and replaced with a loft, selecting the top and bottom sketch. Afterwards, I select 'Construct' and click on the diagonal face of the loft and then 'Çreate Sketch'. <br>
+            After I'm done with my sketch, I extrude the cross-section to my desired length, followed by constructing another plane on the cross-section at the end of the attachment, setting to my desired distance and using 'Split body' after. I did this step because I wanted to 'Shell' the end of the attatchment without having to much depth in my square hole. So by splitting the body, I'll get to separate bodies and the inner attachment will not get affected by the 'Shell' function. <br>
+            Once I'm done with this, I used the 'Circular Pattern' function to create 4 other copies around the first hexagon. (use the vertical axis as axis) <br>
+            Now that I've completed my design, I made the necessary adjustments to touch up my joint design! <br>
+            <iframe src="https://gmail908803.autodesk360.com/shares/public/SH35dfcQT936092f0e43c6d618065635f6b3?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+        </p>
 
 
-        <h3 id="">Electrical Connection</h3>
-        <p>...</p>
-        <iframe src="" height="" width="" title=""></iframe>
-
-
-        <h3 id="">Coding</h3>
-        <p>...</p>
+        <h3 id="">Electronics & Coding</h3>
+        <p>
+            For this section, I started out using TinkerCAD and tested my circuit using that software. <br>
+            <img src="resources/img/finalproject/circuit.png"> <br>
+            I have connected to the relevant points as shown above. For my neopixel, I will be soldering two wires together and connecting them from the start of each led strip. This is to create a star lighting effect where the light while be travelling outwards from the center. <br>
+            Here's my code: <br>
+            <iframe src=https://create.arduino.cc/editor/rachaelng/4ae38c73-114d-4d13-a312-c85195221f6d/preview?F=ReadMe.adoc?embed style="height: 510px;width:480px;margin:10px 0" frameborder=0></iframe>        </p>
 
         <h3 id="">Assembly</h3>
         <p>...</p>
 
         <h2>Results</h2>
         <img src="" alt="final product" width="" height=""/>
-        <p>...</p> <!--reflection:what was completed/what was successful/what needs more work?etc.-->
+        <p>Here is my final product!</p> <!--reflection:what was completed/what was successful/what needs more work?etc.-->
+        <p>After completing this project, I am very satisfied with my work. Knowing that I had put in the effort to give my best work makes all the time and work worth it! For me, I started with multiple ideas that I wanted to try creating. However, with the time constraint to create this individual final project, I had to quickly decide on one that is more realistic to create within that short timeframe. At first I was jumping from one idea/feature to another because there was some difficulty with that component and I was trying to find some alternatives. But soon, I decided to stick to my current idea and quickly draft up a plan on the project details. Throughout my fabrication, I faced many difficulties in terms of: "the code is not working", "my components sizes do not match", "it doesn't fit" etc. To resolve them, I kept searching up on similar projects and related topics to understand better why my work isn't turning out how i wnt it be be. </p>
+        <p>From this final project as well as my other mini-projects, I got to try out and experience multiple methods of fabrication and prototyping.  I am glad I got the chance to try out this many methods/steps while creating this project. From this experience, I have faced several difficulties and took a while to pick up the skills along the way, but from this I got to learn more than what was thought I would have as I try to figure my way through the module and what my capabilities are. Additionally, I got to pick up new skills as well as ive deeper into old ones, as well as learn to apply these skills in fabrication and prototyping. ALthough, it was challenging and I faced many setbacks in my projects, through perseverence, and with the help of internet as well as help from my lecturer, friends and family, I managed to overcome these obstacles.</p>
+        <p> 
+            <b>On a Side Note:</b> <br>
+            Other designs/changes made in the future: creating another type of polyhedron/replacing the diffuser panel with glass & create an 'infinity lasor' type of display/controlling the lights using sound or music/creating shadow patterns to be projected out of the lamp.
+            In addition, I would like to try out other fabrication projects as well!
+        </p>
+        <h2>I''ve come to the end of my module. Hope you enjoyed the content of my blog!</h2>
     </div>
-    /body>
+</body>
     
 </html>
-   
