@@ -1,3 +1,4 @@
+@@ -1,283 +1,283 @@
 <!DOCTYPE html>
 <html>
     <head>
@@ -210,8 +211,10 @@
             </p>
 
             <p> 
-                Here is an attached file to give you a better visualisation of how the shape of the model would look like after assembling. I created this 3D figure to assist me in planning out the right angles and dimensiones tfor the fitting of the mood lamp. To create this 3D figure, I used the 3d geometry function to help draw the figure without needing to draw on a plane. <br>
+                Here is an attached file to give you a better visualisation of how the shape of the model would look like after assembling. <br>
+                I created this 3D figure to assist me in planning out the right angles and dimensiones tfor the fitting of the mood lamp. <br>
                 <iframe src="https://gmail908803.autodesk360.com/shares/public/SH35dfcQT936092f0e43295f6c4d842f67eb?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+                To create this 3D figure, I used the 3d geometry function, to help draw the figure without needing to refer to a single plane, and the parameters, to help set my three planes to the fix edge length (general length of the triangles, excluding any consideration for the individual components) and the golden ratio (*impt to remember:[1+sqrt(5)]/2). Which I then extruded out to a desired thickness. <br>
             </p>
         
 
@@ -222,28 +225,32 @@
             <b>Acrylic</b> <br>
             For the diffuser panels, I planned to use acrylic. The goal is to allow light to pass through the wall of the lamp so I decided to go for either a clear, frosted or white coloured acrylic. I've created regular equilateral triangles with a part of the corners cut of, this is to allow the panels to fit in with the attached joints and sticks.<br>
             <img src="resources/img/finalproject/acrylic sketch.png" width=45%>
+            <img src="resources/img/finalproject/panels.png" width="45%">
         </p>
         <p>
             <b>Wood</b> <br>
             I'll be using plywood to cut out 5x5 sticks to use as the structure/skeleton of the mood lamp design. <br>
             For this component, I simply used the 'Box' and put to my desired length. Afterwards I use 'Retangular pattern' to make 29 other similar copies. <br>
             <img src="resources/img/finalproject/wood sketch.png" width=45%>
+            <img src="resources/img/finalproject/sticks.png" width="45%">
         </p>
    
         <h4>3D Printing</h4>
         <p>
             I'll be 3D printing a casing to hold the arduino as well as 12 joints to connect the laser cut sticks. It was quite doable to create the casing, especially when I was able to refer to dimensions online and I also have an arduino board on hand to take in the measurements. As for the joints, I think this might be one of the more challenging components of the project as I am not as familiar with the routine of making the joints. (especially to scale) It took me quite a while to draw up the joint design but I'm satisified with the outcome! <br>
-            <iframe src="https://gmail908803.autodesk360.com/shares/public/SH35dfcQT936092f0e43abe812a0462a404a?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+            <iframe src="https://gmail908803.autodesk360.com/shares/public/SH35dfcQT936092f0e43abe812a0462a404a?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe><br>
         </p>
         <p>
             For the casing, I created two seperated components, the casing and the cover(lid). <br> 
+            <img src="resources/img/finalproject/casing.png" width="45%"> <br>
             How I drew my casing?<br>
             So basically, I started out with a simple rectangle sketch (following the arduino board dimensions) and 'offsketch' to create the outer wall. Then I extruded the sketch and design it however I like. <br>
             For me, I was afraid the distance and scaling would still be off as I am unable to put them together to see the actual sizing, whether it fitting. So, I made the holes bigger incase. (make room for any errors) <br>
             <iframe src="https://gmail908803.autodesk360.com/shares/public/SH35dfcQT936092f0e433c3f22920d68de55?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
         </p>
         <p>
-            Moving on to the joints, it take my a couple of trials to design the joint of my preferred shape, angle, sizing etc.<br>
+            Moving on to the joints, it took me a couple of trials to design the joint of my preferred shape, angle, sizing etc, but it turned out quite well in the end.<br>            
+            <img src="resources/img/finalproject/joint.png" width="45%">
             I first created a polygon (hexagon), with its centre point at the point of origin, to create a rough scale of how/where I would want to position my attachments in the later stage. <br>
             Next, extrude the hexagon sketch and created a new sketch on the top plane. For this sketch, I select 'Offsketch' after tracing the first hexagon to create a smaller hexagon inline with the centre point of the previous hexagon. For this step, I wanted to create a 'Loft' so that I'll have a diagonal plane to sketch of the attachment cross-section. <br>
             This brings me to the next step where I remove the extruded body and replaced with a loft, selecting the top and bottom sketch. Afterwards, I select 'Construct' and click on the diagonal face of the loft and then 'Çreate Sketch'. <br>
@@ -260,10 +267,30 @@
             <img src="resources/img/finalproject/circuit.png"> <br>
             I have connected to the relevant points as shown above. For my neopixel, I will be soldering two wires together and connecting them from the start of each led strip. This is to create a star lighting effect where the light while be travelling outwards from the center. <br>
             Here's my code: <br>
-            <iframe src=https://create.arduino.cc/editor/rachaelng/4ae38c73-114d-4d13-a312-c85195221f6d/preview?F=ReadMe.adoc?embed style="height: 510px;width:480px;margin:10px 0" frameborder=0></iframe>        </p>
+            <iframe src=https://create.arduino.cc/editor/rachaelng/4ae38c73-114d-4d13-a312-c85195221f6d/preview?F=ReadMe.adoc?embed style="height: 510px;width:480px;margin:10px 0" frameborder=0></iframe>        
+        </p>
+        <p>
+            Now to the actual thing! I have cut out the neopixel to have 4 LEDs on each strip. Referring back to my TinkerCAD connections, I placed arrange my circuit components according to the design ('star' shape) and made sure that the wires were connected to the right places. For the wiring of my neopixel layout, I have first cut out 3 sets of 3 wires (Din, +5V and GND) of equal length, followed by stripping the ends (to remove the rubber insulation). Next, I twisted the stripped out ends and soldered them together so that they will stay together as I solder the wires to the neopixels. Before soldering, I had to make sure that the direction of where I'll be soldering my neopixel is correct(connect to the flat end of the arrrow/the end that has a Din, NOT Do) and the wires are connected to the right areas(for this project, it will be GND to GND. +5V to +5V and V<b>in</b>in to V<b>in</b>). For the wires that will be connecting the starting neopixel to the arduino board, I exchanged the regular wires to ones with a male end (have a pin protruding, normally used to plug into things, which I have connected to the arduino board at labels 'GND', '+5V' and '9' matching the labels on the neopixel where '9' will e connected to Din respectively). As for the last neopixel, only 1 set of wire will be connected which it to the second last neopixel. On to the push button, I have used the same type of wire as the starting neopixel (male) and connected one wire to '2' and another to 'GND'. To be able to connect the wires as well as ensure that current flows through the circuit, we will have to solder the wires onto the input/output. <br>
+            Tip: Now, there's going to be a lot of wiring going on, to make it easier to identify as you carry out the connections, try to use different coloured wires to represent a type of connection. (normally red represents +5V and black/blue represents GND, as for the rest, you may use any colour you like!)<br>
+            Note: Make sure that the solders are not touching one another as you solder the wires in. If you make a mistake in the soldering, just place the tip of the soldering iron over the soldered in flux and quickly placed the desoldering pump right over the melted flux to remove/suck out the unwanted flux.<br>
+            After I've completed the connections, I used the USB cable to connect the arduino board to my code. For it to run, I verified and upload the program into the arduino board.
+            <img src="resources/img/finalproject/circuit_connection.png" width="45%">
+
+        </p>
 
         <h3 id="">Assembly</h3>
-        <p>...</p>
+        <p>
+            Now that all the components that make up this lamp is completed, let's start assembling it!<br>
+            First, I connected the stick to the joint, 1 joint will be connecting 5 sticks. Luckily for me, the hole for the joint attatchment fits the cross-section of the stick very well, I was able to connect them easily without having to use any methods (e.g. glue) to attach the components together. Additionally, it will allow me to remove/open up a part of the mood lamp easily whenever I need to. After forming the lamp structure, I have to attach the diffusing panels. For this I ended up using clear acrylic. however I left one side of the paper on to allow lesser light to pass through and hopefully for a more 'diffusing' effect. Unlike the framing of the lamp, I wasn't so lucky. As the joints were 3D printed out, it was slightly harder to get the right dimensions required to fit the other components(mainly diffuser panels) to it, especially when the joint component is not complete flat. For my panels, as I was assmebling the mood lamp, I noticed that my panels were to small and realised that although I have taken into consideration of the length of attatchment, I missed out a portion of the joint. This leads to a smaller sized panel. To resolve this I first tried to use hot glue gun to add a layer between the frame and the panels, but to no avail the gap was way to big to fill up. In the end I decided to use tape to attach from the inside of the lamp. <br>
+            <img src="resources/img/finalproject/frame1.png" width="33%">
+            <img src="resources/img/finalproject/frame2.png" width="33%">
+            <img src="resources/img/finalproject/frame3.png" width="33%"> <br>
+            <img src="resources/img/finalproject/assembled_design.png" alt="assembled design" width="45%"> <br>
+            And last but not least, it's time to put in the circuit! Firstly, I placed my arduino board into my 3D printed casing and fortunately, it fits! At first I designed it with holes to allow me to screw the board in in case of a loose design and the board falling out. After I have placed my arduino and taped up the casing so the lid doesnt fall out so easily, I went ahead to lay out my neo pixel LEDs. For this portion, I wanted to have the lights projected in all direction to display a variety of different patterns in different directions, hence I placed each neopixel strip over a stick (as it is more stable) in many different directions to create a non-linear 'star' with different orientations. <br>
+            <img src="resources/img/finalproject/casing_nolid.png" width="48%">
+            <img src="resources/img/finalproject/casing_withlid.png" width="48%"> <br>
+            <img src="resources/img/finalproject/final.png" alt="final design" width="45%">
+        </p>
 
         <h2>Results</h2>
         <img src="" alt="final product" width="" height=""/>
