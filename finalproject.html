@@ -1,4 +1,3 @@
-@@ -1,283 +1,283 @@
 <!DOCTYPE html>
 <html>
     <head>
@@ -37,6 +36,7 @@
             
         <div class="main">
             <h2>Icosahedron Mood Lamp</h2>
+            <img src="resources/img/finalproject/presentation slide.png" width="80%">
             <h3>About the Project</h3>
             <h4>What does it do?</h4>
             <p>
@@ -49,7 +49,7 @@
                         Provides different mood lightings.
                     </li>
                     <li>
-                        Control lighting and its features using a push button.
+                        Changes colours & pattern displays with a push of a button.
                     </li>
                     <li>
                         3-dimensional design that provides pathway for light in all directions.
@@ -146,21 +146,12 @@
                     <td>- (provided)</td>
                 </tr>
             </table>
-
-                <!--used to bookmark the page-->
-                <!--<a href=""><img src=""alt="brainstorm & planning" style="width:; height:;"></a>
-                <a href=""><img src=""alt="fabrication-lasercutting" style="width:; height:;"></a>
-                <a href=""><img src=""alt="fabrication-3d printing" style="width:; height:;"></a>
-                <a href=""><img src=""alt="electrical connection" style="width:; height:;"></a>
-                <a href=""><img src=""alt="coding" style="width:; height:;"></a>
-                <a href=""><img src=""alt="assembly & interface" style="width:; height:;"></a>-->
             
-            <h3 id="">Ideation</h3>
+            <h3>Ideation</h3>
             <p>
                 Before starting on the project, I had to do some research. During my research, I found many mood lamp designs, and a lot of them had a single acrylic laser cut design. 
                 I wanted to try something a bit different and was thinking of trying to create a more 3-dimensional looking design for display. 
-                As I looked further into it, I found more like it such as cylindrical and polyhedron. In the end, I decided to attempt creating a regular polyhedron, specifically the icosahedron, as there are not many icosahedron mood lamps. <br>
-                
+                As I looked further into it, I found more like it such as cylindrical and polyhedron. In the end, I decided to attempt creating a regular polyhedron, specifically the icosahedron, as there are not many icosahedron mood lamps. <br>                
             </p>
             <h4>Research</h4>
             <p>
@@ -209,12 +200,11 @@
                     </li>
                 </ul>
             </p>
-
             <p> 
-                Here is an attached file to give you a better visualisation of how the shape of the model would look like after assembling. <br>
+                Here is an attached file to give you a better visualisation of how the general shape of the model would look like after assembling. <br>
                 I created this 3D figure to assist me in planning out the right angles and dimensiones tfor the fitting of the mood lamp. <br>
-                <iframe src="https://gmail908803.autodesk360.com/shares/public/SH35dfcQT936092f0e43295f6c4d842f67eb?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-                To create this 3D figure, I used the 3d geometry function, to help draw the figure without needing to refer to a single plane, and the parameters, to help set my three planes to the fix edge length (general length of the triangles, excluding any consideration for the individual components) and the golden ratio (*impt to remember:[1+sqrt(5)]/2). Which I then extruded out to a desired thickness. <br>
+                <iframe src="https://gmail908803.autodesk360.com/shares/public/SH35dfcQT936092f0e43295f6c4d842f67eb?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe> <br>
+                To create this 3D figure, I used the <b>3d geometry</b> function, to help draw the figure without needing to refer to a single plane, and the <b>parameters</b>, to help set my three planes to the fix edge length (length of the triangles, excluding any considerations for the individual components) and the golden ratio (*impt to remember:[1+sqrt(5)]/2). Which I then extruded out to a desired thickness. <br>
             </p>
         
 
@@ -224,15 +214,15 @@
         <p>
             <b>Acrylic</b> <br>
             For the diffuser panels, I planned to use acrylic. The goal is to allow light to pass through the wall of the lamp so I decided to go for either a clear, frosted or white coloured acrylic. I've created regular equilateral triangles with a part of the corners cut of, this is to allow the panels to fit in with the attached joints and sticks.<br>
-            <img src="resources/img/finalproject/acrylic sketch.png" width=45%>
-            <img src="resources/img/finalproject/panels.png" width="45%">
+            <img src="resources/img/finalproject/acrylic sketch.png" height="200px"> 
+            <img src="resources/img/finalproject/panels.png" height="200px">
         </p>
         <p>
             <b>Wood</b> <br>
             I'll be using plywood to cut out 5x5 sticks to use as the structure/skeleton of the mood lamp design. <br>
             For this component, I simply used the 'Box' and put to my desired length. Afterwards I use 'Retangular pattern' to make 29 other similar copies. <br>
-            <img src="resources/img/finalproject/wood sketch.png" width=45%>
-            <img src="resources/img/finalproject/sticks.png" width="45%">
+            <img src="resources/img/finalproject/wood sketch.png" height="320px">
+            <img src="resources/img/finalproject/sticks.png" height="320px">
         </p>
    
         <h4>3D Printing</h4>
@@ -264,37 +254,44 @@
         <h3 id="">Electronics & Coding</h3>
         <p>
             For this section, I started out using TinkerCAD and tested my circuit using that software. <br>
-            <img src="resources/img/finalproject/circuit.png"> <br>
+            <img src="resources/img/finalproject/circuit.png" height="320px"> <br>
             I have connected to the relevant points as shown above. For my neopixel, I will be soldering two wires together and connecting them from the start of each led strip. This is to create a star lighting effect where the light while be travelling outwards from the center. <br>
             Here's my code: <br>
             <iframe src=https://create.arduino.cc/editor/rachaelng/4ae38c73-114d-4d13-a312-c85195221f6d/preview?F=ReadMe.adoc?embed style="height: 510px;width:480px;margin:10px 0" frameborder=0></iframe>        
         </p>
         <p>
             Now to the actual thing! I have cut out the neopixel to have 4 LEDs on each strip. Referring back to my TinkerCAD connections, I placed arrange my circuit components according to the design ('star' shape) and made sure that the wires were connected to the right places. For the wiring of my neopixel layout, I have first cut out 3 sets of 3 wires (Din, +5V and GND) of equal length, followed by stripping the ends (to remove the rubber insulation). Next, I twisted the stripped out ends and soldered them together so that they will stay together as I solder the wires to the neopixels. Before soldering, I had to make sure that the direction of where I'll be soldering my neopixel is correct(connect to the flat end of the arrrow/the end that has a Din, NOT Do) and the wires are connected to the right areas(for this project, it will be GND to GND. +5V to +5V and V<b>in</b>in to V<b>in</b>). For the wires that will be connecting the starting neopixel to the arduino board, I exchanged the regular wires to ones with a male end (have a pin protruding, normally used to plug into things, which I have connected to the arduino board at labels 'GND', '+5V' and '9' matching the labels on the neopixel where '9' will e connected to Din respectively). As for the last neopixel, only 1 set of wire will be connected which it to the second last neopixel. On to the push button, I have used the same type of wire as the starting neopixel (male) and connected one wire to '2' and another to 'GND'. To be able to connect the wires as well as ensure that current flows through the circuit, we will have to solder the wires onto the input/output. <br>
-            Tip: Now, there's going to be a lot of wiring going on, to make it easier to identify as you carry out the connections, try to use different coloured wires to represent a type of connection. (normally red represents +5V and black/blue represents GND, as for the rest, you may use any colour you like!)<br>
-            Note: Make sure that the solders are not touching one another as you solder the wires in. If you make a mistake in the soldering, just place the tip of the soldering iron over the soldered in flux and quickly placed the desoldering pump right over the melted flux to remove/suck out the unwanted flux.<br>
-            After I've completed the connections, I used the USB cable to connect the arduino board to my code. For it to run, I verified and upload the program into the arduino board.
+            <i>
+                Tip: Now, there's going to be a lot of wiring going on, to make it easier to identify as you carry out the connections, try to use different coloured wires to represent a type of connection. (normally red represents +5V and black/blue represents GND, as for the rest, you may use any colour you like!)<br>
+            </i>
+            <em>
+                Note: Make sure that the solders are not touching one another as you solder the wires in. If you make a mistake in the soldering, just place the tip of the soldering iron over the soldered in flux and quickly placed the desoldering pump right over the melted flux to remove/suck out the unwanted flux.<br>
+            </em> 
+        </p>
+        <p>
+            After I've completed the connections, I used the USB cable to connect the arduino board to my code. For the program to run, I verified and upload the program into the arduino board. <br>
             <img src="resources/img/finalproject/circuit_connection.png" width="45%">
-
         </p>
 
         <h3 id="">Assembly</h3>
         <p>
             Now that all the components that make up this lamp is completed, let's start assembling it!<br>
-            First, I connected the stick to the joint, 1 joint will be connecting 5 sticks. Luckily for me, the hole for the joint attatchment fits the cross-section of the stick very well, I was able to connect them easily without having to use any methods (e.g. glue) to attach the components together. Additionally, it will allow me to remove/open up a part of the mood lamp easily whenever I need to. After forming the lamp structure, I have to attach the diffusing panels. For this I ended up using clear acrylic. however I left one side of the paper on to allow lesser light to pass through and hopefully for a more 'diffusing' effect. Unlike the framing of the lamp, I wasn't so lucky. As the joints were 3D printed out, it was slightly harder to get the right dimensions required to fit the other components(mainly diffuser panels) to it, especially when the joint component is not complete flat. For my panels, as I was assmebling the mood lamp, I noticed that my panels were to small and realised that although I have taken into consideration of the length of attatchment, I missed out a portion of the joint. This leads to a smaller sized panel. To resolve this I first tried to use hot glue gun to add a layer between the frame and the panels, but to no avail the gap was way to big to fill up. In the end I decided to use tape to attach from the inside of the lamp. <br>
+            First, I connected the stick to the joint, 1 joint will be connecting 5 sticks. Luckily for me, the hole for the joint attatchment fits the cross-section of the stick very well, I was able to connect them easily without having to use any methods (e.g. glue) to attach the components together. Additionally, it will allow me to remove/open up a part of the mood lamp easily whenever I need to. After forming the lamp structure, I have to attach the diffusing panels. For this I ended up using clear acrylic. however I left one side of the paper on to allow lesser light to pass through and hopefully for a more 'diffusing' effect. Unlike the framing of the lamp, I wasn't so lucky. As the joints were 3D printed out, it was slightly harder to get the right dimensions required to fit the other components(mainly diffuser panels) to it, especially when the joint component is not complete flat. For my panels, as I was assembling the mood lamp, I noticed that my panels were to small and realised that although I have taken into consideration of the length of attatchment, I missed out a portion of the joint. This leads to a smaller sized panel. To resolve this I first tried to use hot glue gun to add a layer between the frame and the panels, but to no avail the gap was way to big to fill up which led to my next attempt of using tape to hold the panels into place. In the end, I decided to use use hot glue gun to glue the corners of the panels to the vertices (space between each attachment). <br>
             <img src="resources/img/finalproject/frame1.png" width="33%">
             <img src="resources/img/finalproject/frame2.png" width="33%">
             <img src="resources/img/finalproject/frame3.png" width="33%"> <br>
-            <img src="resources/img/finalproject/assembled_design.png" alt="assembled design" width="45%"> <br>
+            <img src="resources/img/finalproject/assembled design.png" alt="assembled design" width="45%"> <br>
             And last but not least, it's time to put in the circuit! Firstly, I placed my arduino board into my 3D printed casing and fortunately, it fits! At first I designed it with holes to allow me to screw the board in in case of a loose design and the board falling out. After I have placed my arduino and taped up the casing so the lid doesnt fall out so easily, I went ahead to lay out my neo pixel LEDs. For this portion, I wanted to have the lights projected in all direction to display a variety of different patterns in different directions, hence I placed each neopixel strip over a stick (as it is more stable) in many different directions to create a non-linear 'star' with different orientations. <br>
             <img src="resources/img/finalproject/casing_nolid.png" width="48%">
             <img src="resources/img/finalproject/casing_withlid.png" width="48%"> <br>
-            <img src="resources/img/finalproject/final.png" alt="final design" width="45%">
         </p>
 
         <h2>Results</h2>
-        <img src="" alt="final product" width="" height=""/>
+        <img src="resources/img/finalproject/final.png" alt="final design" width="45%">
+        <img src="resources/img/finalproject/final_lit.png" alt="final product" width="45%">
         <p>Here is my final product!</p> <!--reflection:what was completed/what was successful/what needs more work?etc.-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZF_1bsjzuVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </video><!--youtube video-->
         <p>After completing this project, I am very satisfied with my work. Knowing that I had put in the effort to give my best work makes all the time and work worth it! For me, I started with multiple ideas that I wanted to try creating. However, with the time constraint to create this individual final project, I had to quickly decide on one that is more realistic to create within that short timeframe. At first I was jumping from one idea/feature to another because there was some difficulty with that component and I was trying to find some alternatives. But soon, I decided to stick to my current idea and quickly draft up a plan on the project details. Throughout my fabrication, I faced many difficulties in terms of: "the code is not working", "my components sizes do not match", "it doesn't fit" etc. To resolve them, I kept searching up on similar projects and related topics to understand better why my work isn't turning out how i wnt it be be. </p>
         <p>From this final project as well as my other mini-projects, I got to try out and experience multiple methods of fabrication and prototyping.  I am glad I got the chance to try out this many methods/steps while creating this project. From this experience, I have faced several difficulties and took a while to pick up the skills along the way, but from this I got to learn more than what was thought I would have as I try to figure my way through the module and what my capabilities are. Additionally, I got to pick up new skills as well as ive deeper into old ones, as well as learn to apply these skills in fabrication and prototyping. ALthough, it was challenging and I faced many setbacks in my projects, through perseverence, and with the help of internet as well as help from my lecturer, friends and family, I managed to overcome these obstacles.</p>
         <p> 
